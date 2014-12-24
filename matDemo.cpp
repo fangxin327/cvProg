@@ -5,7 +5,6 @@
 	> Created Time: Wed 17 Dec 2014 05:15:43 PM CST
         > Discribtion: 
  ************************************************************************/
-:exe "normal \<c-w>\<c-w>"
 #include<iostream>
 #include"opencv2/core/core.hpp"
 #include<cv.h>
@@ -20,5 +19,6 @@ int main(int argc , char ** argv)
 
 	waitKey(0);
 	return 0;
+
 }
 
