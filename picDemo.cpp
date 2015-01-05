@@ -11,12 +11,10 @@
 
 using namespace std;
 using namespace cv;
-
 int main( int argc, char ** argv)
 {
     char *imageName = argv[1];
-
-
+    
     Mat image;
     image = imread( imageName, 1);
     if ( argc != 2 || !image.data ){
@@ -33,12 +31,10 @@ int main( int argc, char ** argv)
     namedWindow( "Gray image", CV_WINDOW_AUTOSIZE );
 
     imshow(imageName, image );
-    show( "Gray image", gray_image );
+    imshow( "Gray image", gray_image );
 
     cout << "M = " << endl << " " << gray_image << endl ;
 
     waitKey(0);
-
-    return 0;
+    return 0;    
 }
-
